@@ -1,31 +1,31 @@
 /* Queues: FIFO */
 class Queue {
   // storage
-  static collection: any[] = [];
+  collection: any[] = [];
 
   // enqueue
   enqueue(item: any) {
-    Queue.collection.push(item);
+    this.collection.push(item);
   }
   // dequeue
   dequeue(item: any) {
-    return Queue.collection.shift();
+    return this.collection.shift();
   }
   // print
   print() {
-    console.log(Queue.collection);
+    console.log(this.collection);
   }
   // front
   front() {
-    return Queue.collection[0];
+    return this.collection[0];
   }
   // size
   size() {
-    return Queue.collection.length;
+    return this.collection.length;
   }
   // check empty
   isEmpty(): boolean {
-    return Queue.collection.length <= 0;
+    return this.collection.length <= 0;
   }
 }
 
@@ -37,6 +37,7 @@ console.log("SIZE", queue.size());
 console.log(queue.isEmpty());
 queue.print();
 
+console.log("FRONT", queue.front());
 queue.dequeue("Brian");
 queue.dequeue("Mwathi");
 queue.enqueue("Wangome");
