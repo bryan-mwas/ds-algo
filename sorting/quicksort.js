@@ -19,7 +19,7 @@ function qsort(arr = []) {
     return acc;
   }, []);
 
-  return res.concat(qsort(less), pivot, qsort(greater));
+  return [].concat(qsort(less), pivot, qsort(greater));
 }
 
 console.log(qsort([4, 3, 2]));
