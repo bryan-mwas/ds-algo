@@ -1,0 +1,15 @@
+Quick Sort (n log(n))
+Divide
+* Midpoint
+* Less
+* Greater
+Conquer
+(qsort(less) + mid + qsort(greater))
+
+Merge Sort (n log(n)) Applications: Linked list and Arrays
+Divide
+* Until we have an empty array
+Conquer
+* Merge two sorted left and right lists
+
+
